@@ -19,10 +19,30 @@
     padding: 0rem 1rem;
 }
 
+.centered-container{
+    width: 30em;
+    max-width: 70%;
+    background-color: var(--off-white);
+    overflow: hidden;
+    border-radius: 1em;
+    text-align: center;
+    font-size: 1em;
+    height: 80vh;
+    display: block;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    align-items: center;
+    border: 3px solid var(--primary-color);
+}
+
 .navigation {
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem;
+    padding: 1rem 1rem;
     border-bottom-left-radius: 1rem;
 }
 
@@ -62,7 +82,7 @@
   }
   
   /* Responsive columns */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 540px) {
     .column {
       width: 100%;
       display: block;
