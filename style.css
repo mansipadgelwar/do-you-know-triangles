@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color:#40916C;
+    --dark-gray: #6B7280;
+    --off-white: #F3F4F6;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans',sans-serif;    
+}
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.primary-link {
+    background-color:
+        var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    display: block;
+    max-width: 140px;
+    margin: auto;
+}
+
+
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+    
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--off-white);
+    height: 50vh;
+  }
+
+  .footer{
+    background-color: 
+    var(--primary-color);
+    padding: 4rem 1rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+    
+}
+
+.footer .link{
+    color: white;
+}
+
+.footer .footer-header{
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+   
+}
+
+.link {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+   
+}
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
