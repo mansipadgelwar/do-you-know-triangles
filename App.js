@@ -2,6 +2,8 @@ var angleOne = document.querySelector("#angle1");
 var angleTwo = document.querySelector("#angle2");
 var angleThree = document.querySelector("#angle3");
 var btnSubmit = document.querySelector("#btn-submit");
+
+//Angles of a triangle
 btnSubmit.addEventListener("click",clickHandler);
 function clickHandler(e){
     e.preventDefault();
@@ -10,10 +12,10 @@ function clickHandler(e){
     angleThree = Number(angleThree.value);
     var sum = angleOne + angleTwo + angleThree;
     if(sum === 180){
-        outputAngles.innerHTML = "it makes a triangle";
+        outputAngles.innerHTML = "Hurray! These angles can make a triangle.";
     }
     else{
-        outputAngles.innerHTML = "it does not make a triangle";
+        outputAngles.innerHTML = "Oops! These angles cannot make a triangle.";
     }
 }
 
