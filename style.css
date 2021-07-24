@@ -24,17 +24,15 @@
     max-width: 70%;
     background-color: var(--off-white);
     overflow: hidden;
-    border-radius: 1em;
+    border-radius: 2rem;
     text-align: center;
     font-size: 1em;
     height: 80vh;
     display: block;
     justify-content: center;
+    padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin: 40px auto;
     align-items: center;
     border: 3px solid var(--primary-color);
 }
@@ -108,6 +106,17 @@
     width: 90px;
    
     
+  }
+
+  .outputArea{
+    padding: 1rem 1rem 2rem 1rem;
+    margin: auto; 
+    margin-top: 1rem;  
+    display: block;
+    height: 20px;
+    width: 90px;  
+    border:2px solid var(--primary-color);
+    background-color: white;
   }
 
   .button{
