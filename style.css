@@ -37,6 +37,20 @@
     border: 3px solid var(--primary-color);
 }
 
+.question-div{
+    max-width: 600px;
+    margin: auto;
+
+}
+
+.section{
+  padding: 2rem;
+}
+
+.section-off-white{
+  background-color: var(--off-white);
+}
+
 .navigation {
     background-color: var(--primary-color);
     color: white;
@@ -136,6 +150,11 @@
     text-align: left;
     padding: 0 0 1rem 2rem;
     font-weight: bold;
+  }
+
+  .score-div{
+    max-width: 600px;
+    margin: auto;
   }
 
 
