@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel='stylesheet'/>   
+    <title>Do you know triangles?</title>
+</head>
+<body>
+
+    <header class="navigation container">
+        <div class="nav-brand">IAMDEVELOPER</div>         
+    </header>  
+
+    <form id="quiz-form">
+
+        <div class="section section-off-white container question-div">
+            <label class="question">1. If a triangle has angles 135<sup>0</sup>, 15<sup>0</sup>, 30<sup>0</sup>. Is it an obtuse angled triangle?</label><br>
+            <label for="radio1"><input required type="radio" id="radio1" value="option1" name="question1">yes</label>
+            <label for="radio2"><input required type="radio" id="radio2" value="option2" name="question1">no</label>
+        </div>
+
+    
+        <div class="section container question-div">
+            <label class="question">2. If a triangle has angles 115<sup>0</sup>, 25<sup>0</sup>, 40<sup>0</sup>. Is it an acute angled triangle?</label><br>
+            <label for="radio3"><input required type="radio" id="radio3" value="option1" name="question2">yes</label>
+            <label for="radio4"><input required type="radio" id="radio4" value="option2" name="question2">no</label>
+        </div>
+    
+    
+        <div class="section section-off-white container question-div">
+            <label class="question">3. If a triangle has angles 90<sup>0</sup>, 60<sup>0</sup>, 30<sup>0</sup>. Is it an right angled triangle?</label><br>
+            <label for="radio5"><input required type="radio" id="radio5" value="option1" name="question3">yes</label>
+            <label for="radio6"><input required type="radio" id="radio6" value="option2" name="question3">no</label>
+        </div>
+   
+   
+        <div class="section container question-div">
+            <label class="question">4. A triangle has angles 60<sup>0</sup>, 60<sup>0</sup>, 60<sup>0</sup>. Is it an equilateral triangle?</label><br>
+            <label for="radio7"><input required type="radio" id="radio7" value="option1" name="question4">yes</label>
+            <label for="radio8"><input required type="radio" id="radio8" value="option2" name="question4">no</label>
+        </div>
+    
+        <div class="section section-off-white container question-div">
+            <label class="question">5. If a triangle has angles 25<sup>0</sup>, 75<sup>0</sup>, 80<sup>0</sup>. Is it an acute triangle?</label><br>
+            <label for="radio9"><input required type="radio" id="radio9" value="option1" name="question5">yes</label>
+            <label for="radio10"><input required type="radio" id="radio10" value="option2" name="question5">no</label>
+        </div>
+
+    
+        <div class="section container question-div">
+            <label class="question">6. If a triangle has 2 sides with equal lengths and 75<sup>0</sup> angle between them. What is the type of triangle?</label><br>
+            <label for="radio11"><input required type="radio" id="radio11" value="option1" name="question6">Equilateral</label>
+            <label for="radio12"><input required type="radio" id="radio12" value="option2" name="question6">Isosceless</label>
+            <label for="radio13"><input required type="radio" id="radio13" value="option3" name="question6">Right Angle triangle</label>
+        </div>
+
+    
+        <div class="section section-off-white container question-div">
+            <label class="question">7. If a triangle has 2 angles of 75<sup>0</sup>. What is the measure of third angle in degree?</label><br>
+            <label for="radio14"><input type="radio" id="radio14" value="option1" name="question7">25</label>
+            <label for="radio15"><input type="radio" id="radio15" value="option2" name="question7">30</label>
+            <label for="radio16"><input type="radio" id="radio16" value="option3" name="question7">15</label>
+        </div>
+
+
+        <div class="section container question-div">        
+            <label class="question">8. If a triangle has 2 sides with equal lengths and 60<sup>0</sup> angle between them. What is the type of triangle?</label><br>
+            <label for="radio17"><input required type="radio" id="radio17" value="option1" name="question8">Equilateral</label>
+            <label for="radio18"><input required type="radio" id="radio18" value="option2" name="question8">Isosceles</label>
+            <label for="radio19"><input required type="radio" id="radio19" value="option3" name="question8">Both</label>
+         </div>
+    
+
+        <div class="section section-off-white container question-div">
+            <label class="question">9. The perimeter of an equilateral triangle is 15cm. What is the length of one side?</label><br>
+            <label for="radio20"><input required type="radio" id="radio20" value="option1" name="question9">15cm</label>
+            <label for="radio21"><input required type="radio" id="radio21" value="option2" name="question9">45cm</label>
+            <label for="radio22"><input required type="radio" id="radio22" value="option3" name="question9">5cm</label>
+        </div>
+
+
+        <div class="section container question-div">
+            <label class="question">10. If a triangle has sides of 2cm, 3cm, 4cm, what is the type of triangle?</label><br>
+            <label for="radio23"><input required type="radio" id="radio23" value="option1" name="question10">15cm</label>
+            <label for="radio24"><input required type="radio" id="radio24" value="option2" name="question10">45cm</label>
+            <label for="radio25"><input required type="radio" id="radio25" value="option3" name="question10">5cm</label> 
+        </div>
+
+</form>
+    
+    <div class="section container score-div">
+    <button id="btn-submit" class="button" type="submit">Submit</button>
+    <h2>Score will be shown here</h2>
+    <div>
+        <label>Score: <span id="score-output"></span></label>
+    </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">
+            social media presence
+        </div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                   linkedin
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                   github
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                     instagram
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <script src="quiz.js" type="text/javascript"></script> 
+</body>
+</html>

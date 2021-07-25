@@ -110,6 +110,7 @@
     text-align: center;
     background-color: var(--off-white);
     height: 50vh;
+    max-height: 100%;
   }
 
   .input{
@@ -144,6 +145,11 @@
     border-radius: 1.5rem;
     cursor: pointer;
     border: 2px solid var(--primary-color);
+  }
+
+  .question{
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 
   .radio{
