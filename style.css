@@ -20,14 +20,15 @@
 }
 
 .centered-container{
-    width: 30em;
-    max-width: 70%;
+    width: 450px;
+    max-width: 100%;
     background-color: var(--off-white);
-    overflow: hidden;
+    overflow: auto;
     border-radius: 2rem;
     text-align: center;
     font-size: 1em;
     height: 80vh;
+    max-height: 100%;
     display: block;
     justify-content: center;
     padding: 2rem;
