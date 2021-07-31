@@ -17,65 +17,20 @@
     
     <div class="centered-container">
         <h1>Calculate Area</h1>
-        <h3>Select an option below as per the data
-             you have for a triangle.
-    </h3>
+        <h3>Enter the length of base and height </h3>  
+
+    
     <form>
-        <div class="radio">
-           <label><input type="radio" name="optionOne" value="optionOne" id="optionOne">
-            If you have base & height length.</label>
-        </div>
-        <div class="radio">
-            <label><input type="radio" name="optionTwo" value="optionTwo" id="optionTwo">
-             If you have length of 3 sides.</label>
-         </div>
-         <div class="radio">
-            <label><input type="radio" name="optionThree" value="optionThree" id="optionThree">
-             If you have length of 2 sides & included angle.</label>
-         </div>
-
+        <label>base =
+            <input class="input base" type="number" placeholder="base" required>
+        </label>
+        <label>height =
+            <input class="input height" type="number" placeholder="height" required>
+        </label>
+        <button class="button" type="submit">Calculate</button>
+    <div class="output">Area = <span id="area" class="outputArea"></span></div>
     </form>
-
-    
-    <form id="optionOne">
-        <label>b =
-            <input class="input" type="number" placeholder="base" required>
-        </label>
-        <label>h =
-            <input class="input" type="number" placeholder="height" required>
-        </label>
-    <div class="output">Area = </div>
-    </form>
-
-    <form id="optionTwo">
-        <label>a =
-            <input class="input" type="number" placeholder="1st side" required>
-        </label>
-        <label>b =
-            <input class="input" type="number" placeholder="2nd side" required>
-        </label>
-        <label>c =
-            <input class="input" type="number" placeholder="3rd side" required>
-        </label>
-    <div class="output">Area = </div>
-    </form>
-
-
-    <form id="optionThree">
-        <label>a =
-            <input class="input" type="number" placeholder="1st side" required>
-        </label>
-        <label>b =
-            <input class="input" type="number" placeholder="2nd side" required>
-        </label>
-        <label>angle =
-            <input class="input" type="number" placeholder="angle" required>
-        </label>
-        
-    <div class="output">Area = </div>
-    </form> 
-    
-        
+             
     </div>
 
     <footer class="footer">
