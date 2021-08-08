@@ -9,7 +9,6 @@ let score = 0;
 btnSubmit.addEventListener("click", (e) => {
 
     e.preventDefault();
-    //console.log("clicked");
     const data = new FormData(quizForm);    
     let index=0;
     for(let entry of data){
@@ -21,5 +20,4 @@ btnSubmit.addEventListener("click", (e) => {
         console.log("score");
     }
     scoreOutput.innerHTML = score;
-    btnSubmit.style.display= "none";
 });

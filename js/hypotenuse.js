@@ -1,12 +1,25 @@
-var base = document.querySelector("#base");
-var height = document.querySelector("#height");
-var btnHypo = document.querySelector("#btn-hypotenuse");
+const input = document.querySelectorAll(".input");
+const btnHypotenuse = document.querySelector("#btn-hypotenuse");
+const output = document.querySelector("#output");
+const outputArea = document.querySelector(".outputArea");
+const errorMessage = document.querySelector("#error");
 
-btnHypo.addEventListener("click",calculateHypo);
 
-function calculateHypo(e){
+
+btnHypotenuse.addEventListener("click",calculateHypotenuse);
+
+function calculateHypotenuse(e){
+    errorMessage.style.display = "none";
     e.preventDefault();
-    base = Number(base.value);
-    height = Number(height.value);
-    outputArea.innerHTML = Math.sqrt((base*base) + (height*height)).toFixed(2);
+    const b = Number(input[0].value);
+    const h = Number(input[1].value);
+    if(b > 0 && h > 0){
+    output.style.display = "block";
+    outputArea.innerText = Math.sqrt((b*b) + (h*h)).toFixed(2);
+    }
+    else{
+        errorMessage.style.display = "block";
+        output.style.display = "none";
+        errorMessage.innerText = "Enter valid base and height length";
+    }
 }

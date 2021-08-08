@@ -15,6 +15,10 @@
     font-family: 'Open Sans',sans-serif;    
 }
 
+.row h3{
+   padding-top: 4rem;
+}
+
 .container {
     padding: 0rem 1rem;
 }
@@ -56,13 +60,13 @@
     background-color: var(--primary-color);
     color: white;
     padding: 1rem 1rem;
+    text-align: center;
     border-bottom-left-radius: 1rem;
+    height: 15vh;
+    display: block;
 }
 
-.navigation .nav-brand {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
+
 
 .primary-link {
     background-color:
@@ -85,7 +89,10 @@
   }
   
   /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px;}
+  .row {
+    margin: 80px 0 80px -5px ;
+  
+  }
   
   /* Clear floats after the columns */
   .row:after {
@@ -110,7 +117,7 @@
     padding: 16px;
     text-align: center;
     background-color: var(--off-white);
-    height: 50vh;
+    height: 45vh;
     max-height: 100%;
   }
 
@@ -137,15 +144,16 @@
 
   .button{
     display: block;
+    max-width: 140px;
+    border: 1px solid var(--primary-color);
     margin: 0 auto 1rem;
+    text-decoration: none;
+    text-align: center;
     padding: 0.5rem 1rem;
     background-color: var(--primary-color);
     color: white;
-    font-weight: bold;
-    border: none;
     border-radius: 1.5rem;
     cursor: pointer;
-    border: 2px solid var(--primary-color);
   }
 
   .question{
