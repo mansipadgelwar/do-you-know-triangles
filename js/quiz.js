@@ -4,11 +4,9 @@ var btnSubmit = document.querySelector("#btn-submit");
 
 const correctAns = ["option1", "option2", "option1", "option1","option1","option2", "option2", "option3", "option3", "option3" ];
 
-let score = 0;
-
 btnSubmit.addEventListener("click", (e) => {
-
     e.preventDefault();
+    let score = 0;
     const data = new FormData(quizForm);    
     let index=0;
     for(let entry of data){
