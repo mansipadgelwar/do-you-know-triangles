@@ -57,13 +57,13 @@
 }
 
 .navigation {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 1rem;
-    text-align: center;
-    border-bottom-left-radius: 1rem;
-    height: 15vh;
-    display: block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 
@@ -99,26 +99,6 @@
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 540px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-      
-    }
-  }
-  
-  /* Style the counter cards */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding: 16px;
-    text-align: center;
-    background-color: var(--off-white);
-    height: 45vh;
-    max-height: 100%;
   }
 
   .input{
@@ -172,32 +152,7 @@
     margin: auto;
   }
 
-
-  .footer{
-    background-color: 
-    var(--primary-color);
-    padding: 4rem 1rem;
-    text-align: center;
-    color: white;
-    border-top-right-radius: 1rem;
-    
-}
-
-.footer .link{
-    color: white;
-}
-
-.footer .footer-header{
-    font-weight: bold;
-    font-size: large;
-}
-
-.footer ul{
-    padding-inline-start: 0px;
-   
-}
-
-.link {
+  .link {
     box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -209,7 +164,67 @@
     padding-inline-start: 0px;
 }
 
-.list-item-inline {
-    display: inline;
-    padding: 0rem 0.5rem;
+
+
+.footer{
+  background-color: 
+  var(--primary-color);
+  padding: 2rem 1rem;
+  text-align: center;
+  color: white;
+  border-top-right-radius: 2rem;
+  
 }
+
+
+
+.list-link{
+  text-decoration: none;
+  color: white;
+}
+
+.footer .footer-header{
+  font-weight: bold;
+  font-size: large;
+  padding-bottom: 1rem;
+}
+
+.footer .list-item-inline{
+  margin: 0.5rem;
+  padding: 0 2rem;
+  display: inline-block;
+}
+
+.footer ul{
+  padding-inline-start: 0px;
+ 
+}
+
+.fa{
+  font-size: 2.3rem;
+}
+
+  
+  /* Responsive columns */
+  @media screen and (max-width: 540px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: var(--off-white);
+    height: 45vh;
+    max-height: 100%;
+  }
+
+ 
+
+
