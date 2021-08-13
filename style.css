@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-    --primary-color:#40916C;
+    --primary-color:#6366F1;
     --dark-gray: #6B7280;
     --off-white: #F3F4F6;
 }
@@ -19,8 +19,9 @@
    padding-top: 4rem;
 }
 
-.container {
-    padding: 0rem 1rem;
+ .container {
+    margin-top: 5rem;
+    
 }
 
 .centered-container{
@@ -60,7 +61,7 @@
   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-left-radius: 2rem;
   font-weight: bold;
   font-size: 1.1rem;
   text-align: center;
@@ -80,18 +81,28 @@
 
 
   
-  /* Float four columns side by side */
+  
   .column {
-    float: left;
-    width: 25%;
-    padding: 10px 10px;
+    padding: 10px 10px;     
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+    
     
   }
   
-  /* Remove extra left and right margins, due to padding */
-  .row {
-    margin: 80px 0 80px -5px ;
   
+  .row {
+    display: flex;  
+  
+  }
+
+  .column .card{
+    width: 300px;
+    margin: 10px;
   }
   
   /* Clear floats after the columns */
@@ -173,6 +184,7 @@
   text-align: center;
   color: white;
   border-top-right-radius: 2rem;
+  margin-top: 5rem;
   
 }
 
@@ -215,13 +227,13 @@
     }
   }
   
-  /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 var(--primary-color);
     padding: 16px;
     text-align: center;
     background-color: var(--off-white);
     height: 45vh;
+    border-radius: 0.5rem;
     max-height: 100%;
   }
 
