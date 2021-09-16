@@ -6,6 +6,7 @@ btnCalculate.addEventListener("click",clickHandler);
 
 function clickHandler(e){
   e.preventDefault();
+
   error.style.display = "none";
   const b = Number(input[0].value);
   const h = Number(input[1].value);    
@@ -13,9 +14,9 @@ function clickHandler(e){
       output.style.display = "block";
       area.innerText = (b * h)/2;
     }
-    else{
+    else {
         output.style.display = "none";
         error.style.display = "block";
-        error.innerText = "Enter valid base and height value";
+        error.innerText = "Please provide valid values";
     }
 }

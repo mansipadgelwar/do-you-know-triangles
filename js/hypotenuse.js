@@ -20,6 +20,6 @@ function calculateHypotenuse(e){
     else{
         errorMessage.style.display = "block";
         output.style.display = "none";
-        errorMessage.innerText = "Enter valid base and height length";
+        errorMessage.innerText = "Please provide valid values.";
     }
 }
