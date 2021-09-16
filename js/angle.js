@@ -11,7 +11,7 @@ function clickHandler(e){
     if(angle1.value === "" || angle2.value === "" || angle3.value === ""){
         outputAngles.innerHTML = "Please provide all the angles of a triangle. "
     } 
-    else if(angle1.value < 0 || angle2.value < 0 || angle3.value < 0){
+    else if(angle1.value <= 0 || angle2.value <= 0 || angle3.value <= 0){
         outputAngles.innerHTML = "Please provide valid angles. "
     }       
     else{
